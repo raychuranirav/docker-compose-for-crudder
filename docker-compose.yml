@@ -5,7 +5,7 @@ services:
       FRONTEND_URL: "http://${ips}:3000"
       BACKEND_URL: "http://${ips}:4567"
     image: raychuranirav/cruddur-backend
-    build: ./backend-flask
+#    build: ./backend-flask
     ports:
       - "4567:4567"
     volumes:
@@ -14,7 +14,7 @@ services:
     environment:
       REACT_APP_BACKEND_URL: "http://${ips}:4567"
     image: raychuranirav/cruddur-frontend
-    build: ./frontend-react-js
+#    build: ./frontend-react-js
     ports:
       - "3000:3000"
     volumes:
